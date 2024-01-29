@@ -28,7 +28,7 @@ const postRoutes = require("./routes/postRoutes");
 const forgotRoutes = require("./routes/forgotRoutes");
 
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
-app.use("/api", userRoutes); // Use the combined routes
+app.use("/api", userRoutes); 
 app.use("/api", loginRoutes);
 app.use("/api", postRoutes);
 app.use("/api", forgotRoutes);

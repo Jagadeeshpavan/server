@@ -1,7 +1,6 @@
 const User = require('../models/userModel');
 const Post = require('../models/postModel');
 const multer = require('multer');
-// const { default: MyPost } = require('../../client/src/Components/Mypost');
 
 const getFileType = (mimeType) => {
   const splitMimeType = mimeType.split('/');

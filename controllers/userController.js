@@ -9,7 +9,6 @@ exports.registerUser = async (req, res) => {
   const { firstName,lastName, email, phone, password } = req.body;
 
   try {
-    // Hash the password using bcrypt
     const hashedPassword = await bcrypt.hash(password, SALT_ROUNDS);
 
     // Create a new user document

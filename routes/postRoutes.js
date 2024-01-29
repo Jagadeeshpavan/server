@@ -17,7 +17,6 @@ const storage = multer.diskStorage({
   
 const upload = multer({ storage });
 
-// Define routes for appointments
 router.post('/post',upload.single('image'), authMiddleware, postController.addPost);
 router.post('/like/:postId',authMiddleware, postController.likePost);
 router.post('/dislike/:postId',authMiddleware, postController.dislikePost);

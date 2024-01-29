@@ -1,4 +1,3 @@
-// routes/forgotRoutes.js
 const express = require('express');
 const forgotController = require('../controllers/forgotController');
 
